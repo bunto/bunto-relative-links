@@ -1,0 +1,16 @@
+inherit_gem:
+  bunto: .rubocop.yml
+
+AllCops:
+  Exclude:
+    - vendor/**/*
+
+Metrics/BlockLength:
+  Exclude:
+    - spec/**/*
+
+Metrics/PerceivedComplexity:
+  Enabled: false
+
+Metrics/AbcSize:
+  Enabled: false
